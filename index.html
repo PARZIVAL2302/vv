@@ -1,0 +1,46 @@
+<!--created by prashant shukla-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ping Pong</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+
+    </head>
+    <body background="background1.jpg">
+        <center>
+            <h1 class="header">AL Ping-Pong game</h1>
+            <button class="btn btn-danger instructions" data-toggle="Modal" data-target="#myModal">How to play?</button>
+            <br><br>
+            <h2 id="status"></h2>
+            <br><br><br>
+            <div id="canvas"></div>
+            <br><br><hr width="80%">
+            <br><br>
+            <button onclick="restart()" id="restart" class="btn btn-info" style="width:300px; height:30px; color:black;"><b>Restart</b></button>
+            <div id="myModal" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content"><div class="modal-header"><h3>Instructions</h3>
+                        <button class="close" data-dismiss="modal">&times;</button></div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>The stick on the right hand side is controlled by your cursor</li>
+                            <li>Your aim is to bounce the ball as many times as possible by touching it with your stick when is comes towards you.</li>
+                            <li>The speed of the ball increases by 0.5 every time you hit it.</li>
+                            <li>You can restart the game by pressing the restart button.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer" style="width:100%; position: sticky;">Made by Vishwaraj</div>
+        </center>
+        <script src="main.js"></script>
+    </body>
+</html>
